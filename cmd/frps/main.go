@@ -22,6 +22,7 @@ import (
 
 	_ "github.com/fatedier/frp/assets/frps"
 	_ "github.com/fatedier/frp/pkg/metrics"
+	"github.com/fatedier/frp/cmd/frps/sub"
 )
 
 func main() {
@@ -29,5 +30,5 @@ func main() {
 	// TODO: remove this when we drop support for go1.19
 	rand.Seed(time.Now().UnixNano())
 
-	Execute()
+	sub.Execute()
 }
